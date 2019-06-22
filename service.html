@@ -1,0 +1,296 @@
+﻿
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Services</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http//fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- start top_js_button -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+
+   <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+</head>
+<body>
+<!-- start header -->
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="images/29.png" style="float:left;"> </a>
+             
+		</div>
+       <img src="images/11.gif" style="float:right" onclick="a_sta()">
+        <audio src="source/王博文-需要人陪.mp3" loop autoplay="autoplay" controls style="float:right;display:none;" id="au"></audio>
+		<div class="">
+		    <ul>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+</div>
+<!-- start header -->
+<div class="header_btm">
+<div class="wrap">
+	<div class="header_sub">
+		<div class="h_menu">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="about.html">关于我</a></li>
+				<li  class="visited"><a href="service.html">服务</a></li>
+				<li><a href="contact.html">我的歌单</a></li>
+				<li><a href="blog.html">其他</a></li>
+				<li><a href="details.html">视频</a></li>
+			</ul>
+		</div>
+		<div class="h_search">
+    		<form>
+    			<input type="text" value="" placeholder="搜索啦...">
+    			<input type="submit" value="">
+    		</form>
+		</div>
+        <div class="menu" style="display:none;">
+        	<ul>
+				<li class="active"><a href="index.html">首页</a></li>
+				<li><a href="about.html">关于我</a></li>
+				<li><a href="service.html">服务</a></li>
+				<li><a href="contact.html">我的歌单</a></li>
+				<li><a href="blog.html">其他</a></li>
+				<li><a href="details.html">视频</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <form action="/iphone/search.html">
+                <input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}" class="text">
+            </form>
+        </div>
+        <div class="sub-head">
+        	<ul>
+            	<li><a href="#" id="menu">菜单 <span></span></a></li>
+            	<li><a href="#" id="search">搜索<span></span></a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+	   <script type="text/javascript">
+		$(".menu,.search").hide();
+		$("#menu").click(function(){
+			$(".menu").toggle();
+			$(".search").hide();
+			$("#search").removeClass("active");
+			$("#menu").toggleClass("active");
+		});
+		$("#search").click(function(){
+			$(".search").toggle();
+			$(".menu").hide();
+			$("#menu").removeClass("active");
+			$("#search").toggleClass("active");
+			$(".text").focus();
+		});
+		function a_sta(){
+			var aud=document.getElementById("au");
+			if(aud.paused){
+			aud.play();
+			}else{
+				aud.pause();
+			}
+			}
+	</script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<div class="clear"></div>
+
+		<div class="clear"></div>
+</div>
+</div>
+</div>
+<!-- start top_bg -->
+<div class="top_bg">
+<div class="wrap">
+	<div class="top">
+		<h2>时刻为您服务</h2>
+ 	</div>
+</div>
+</div>
+<!-- start main -->
+<div class="wrap">
+<div class="main">
+		<!-- start span_of_3 -->
+		<div class="span_of_3">
+			<div class="span1_of_3">
+				<a href="details.html"><img src="images/pic1.jpg" alt=""></a>
+				<div class="span1_of_3_text">
+					<h3><a href="details.html">青春是歌、青春是画，青春是梦，青春是个朝气蓬勃的字眼</a></h3>
+					<p>青春写满了自豪与骄傲，让我们共同描绘青春的风景图，我想高唱：青春是美丽的，因为青春不会太长，昙花一现是短暂的，可是谁能说他的不美，正是因为他的短暂，给人们带来来了无限的留恋！可是昙花一现有无数次，人的青春只有一次，所以让我们好好珍惜着美丽的青春吧！！！　</p>
+				</div>
+				<div class="ser_btn">
+					<a class="button  ser_btn1" href="details.html">省略一万个字</a>
+				</div>
+			</div>
+			<div class="span1_of_3">
+				<a href="details.html"><img src="images/pic2.jpg" alt=""></a>
+				<div class="span1_of_3_text">
+					<h3><a href="details.html">世间的感情，仅隔着一道距离。</a></h3>
+					<p>有些感情因距离而变得美好，有些美好因为距离。鼓励了彼此，才会让前进的路。充满了阳光照进了幸福。温暖了彼此，不过有时候。距离真是一把，验证感情的时光机。故此，有人因它而坚持。因为相信熬过了距离。剩下的便是春风，有人因它而离去，因为相信前方的未明。故此半路匆匆离去，</p>
+				</div>
+				<div class="ser_btn">
+					<a class="button  ser_btn1" href="details.html">省略一万个字</a>
+				</div>
+			</div>
+			<div class="span1_of_3">
+				<a href="details.html"><img src="images/pic3.jpg" alt=""></a>
+				<div class="span1_of_3_text">
+					<h3><a href="details.html">陌上花开，隔桌花夜</a></h3>
+					<p>陌上花开，隔桌花夜。一雨芳年，相遇的竹叶。刻写着一一路走过的青苔，时光雨下。散落一地落红，那景，那月。正如初好，一丝寒风袭来。碧玉含羞的清风，凝固了月下。送走了独夜，留下了一丝静好。人生因情而美。岁月因爱而坚守。</p>
+				</div>
+				<div class="ser_btn">
+					<a class="button  ser_btn1" href="details.html">省略一万个字</a>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!--  -->
+		<div class="span_of_3">
+			<div class="span1_of_3">
+				<a href="details.html"><img src="images/pic4.jpg" alt=""></a>
+				<div class="span1_of_3_text">
+					<h3><a href="details.html">寒风吹过。陌上红尘，散落过往。</a></h3>
+					<p>流年的道别中，总有一段无法言辞的往诉。站在惜忆的尽头，数数奔赶过的黄昏，言出黄昏的每一季：静惜的落雨中，总带着这样或那样的心情，慢步独入那冰雨的清风里，感受着每一个季节带来别样的静好，</p>
+				</div>
+				<div class="ser_btn">
+					<a class="button  ser_btn1" href="details.html">省略一万个字</a>
+				</div>
+			</div>
+			<div class="span1_of_3">
+				<a href="details.html"><img src="images/pic5.jpg" alt=""></a>
+				<div class="span1_of_3_text">
+					<h3><a href="details.html">命是如此。岁月便也跟着如此，走过时间的沧海</a></h3>
+					<p>生命中一些风。一些景，总在岁月中，演奏的远去的故事，一些落叶。漂过枝头，随风飞翔，这样的季节，这样的回忆。不知道还能在岁月中展示多久，但我知道走过的路，一定会留下一些我们无法预料到的意外，预料多了也就习惯了。</p>
+				</div>
+				<div class="ser_btn">
+					<a class="button  ser_btn1" href="details.html">省略一万个字</a>
+				</div>
+			</div>
+			<div class="span1_of_3">
+				<a href="details.html"><img src="images/pic6.jpg" alt=""></a>
+				<div class="span1_of_3_text">
+					<h3><a href="details.html">我们心存感激。</a></h3>
+					<p>人生的路上，总是一路走过。人生的感情总是，一路擦肩聚散。这个世间，总有人因懂你而停留，也总有人因误解而离开。对于一路走过而停留的人，我们心存感激。因为有共鸣。所以不会离开，生命的路上。红尘的渡口。</p>
+				</div>
+				<div class="ser_btn">
+					<a class="button  ser_btn1" href="details.html">省略一万个字</a>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!-- end grids_of_3 -->
+	</div>
+</div>
+<!-- start footer -->
+<div class="footer_bg">
+<div class="wrap">
+	<div class="footer">
+		<!-- start span_of_4 -->
+		<div class="span_of_4">
+			<div class="span1_of_4">
+				<h4>爱</h4>
+				<p>最美的风景，是握你的手，亲吻你的脸庞，向风走去，向海飞翔。</p>
+				
+			</div>
+			<div class="span1_of_4">
+				<h4>恨</h4>
+				<p>最美的风景，是日落，日出，有你陪伴，我的所有你都能听懂。
+
+最美的时光，是你织的衣袖，是童话里的所有。
+
+年少的时光是琥珀，一滴滴的繁琐。
+
+清风没带来你的温柔，却只留下熟悉的雨。</p>
+			</div>
+			<div class="span1_of_4">
+				<h4>情</h4>
+				<p class="btm">留下的敲打声，是每一段旅程和心动，
+
+是每一次失魂落魄的浓
+
+是励志的每一场过场电影
+
+是短暂的悲伤的又一次回响。
+
+是KTV的歌再也没有那么好听。
+
+生命盼望的归鸿，几万重。
+
+缘分消失在高楼烟雨中</p>
+
+			</div>
+			<div class="span1_of_4">
+				<h4>仇</h4>
+				<p class="btm">又到一年佳节日
+
+十载满思梦苍穹之中
+
+懂得了都知道
+
+再见也是回不去
+
+谁也不曾从谁的花季里停留。</p>
+				<p class="btm1 pin">我的地址：</p>
+				<p class="btm1 mail"><a href="#">呵呵</a></p>
+				<p class="call">不存在的</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- start footer -->
+<div class="footer_bg1">
+<div class="wrap">
+	<div class="footer1">
+		<!-- scroll_top_btn -->
+	    <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+		<!--end scroll_top_btn -->
+		<div class="">
+		    <ul>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+			</ul>
+		</div>
+|
+		<div class="clear"></div>
+	</div>
+</div>
+</div>
+
+</html>

@@ -1,0 +1,231 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>About</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http//fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- start top_js_button -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+
+   <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+</head>
+<body>
+<!-- start header -->
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="images/29.png" style="float:left;"> </a>
+             
+		</div>
+        <img src="images/77.gif" style="float:right" onclick="a_sta()">
+        <audio src="source/王栎鑫-最好的我们-(网络剧《最好的我们》插曲).mp3" loop autoplay="autoplay" controls style="float:right;display:none;" id="au"></audio>
+		<div class="">
+		    <ul>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+</div>
+<!-- start header -->
+<div class="header_btm">
+<div class="wrap">
+	<div class="header_sub">
+		<div class="h_menu">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li  class="visited"><a href="about.html">关于我</a></li>
+				<li><a href="service.html">服务</a></li>
+				<li><a href="contact.html">我的歌单</a></li>
+				<li><a href="blog.html">其他</a></li>
+				<li><a href="details.html">视频</a></li>
+			</ul>
+		</div>
+		<div class="h_search">
+    		<form>
+    			<input type="text" value="" placeholder="搜索啦...">
+    			<input type="submit" value="">
+    		</form>
+		</div>
+        <div class="menu" style="display:none;">
+        	<ul>
+				<li class="active"><a href="index.html">首页</a></li>
+				<li><a href="about.html">关于我</a></li>
+				<li><a href="service.html">服务</a></li>
+				<li><a href="contact.html">我的歌单</a></li>
+				<li><a href="blog.html">其他</a></li>
+				<li><a href="details.html">视频</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <form action="/iphone/search.html">
+                <input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}" class="text">
+            </form>
+        </div>
+        <div class="sub-head">
+        	<ul>
+            	<li><a href="#" id="menu">菜单  <span></span></a></li>
+            	<li><a href="#" id="search">搜索<span></span></a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+	   <script type="text/javascript">
+		$(".menu,.search").hide();
+		$("#menu").click(function(){
+			$(".menu").toggle();
+			$(".search").hide();
+			$("#search").removeClass("active");
+			$("#menu").toggleClass("active");
+		});
+		$("#search").click(function(){
+			$(".search").toggle();
+			$(".menu").hide();
+			$("#menu").removeClass("active");
+			$("#search").toggleClass("active");
+			$(".text").focus();
+		});
+		function a_sta(){
+			var aud=document.getElementById("au");
+			if(aud.paused){
+			aud.play();
+			}else{
+				aud.pause();
+			}
+			}
+	</script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<div class="clear"></div>
+
+		<div class="clear"></div>
+</div>
+</div>
+</div>
+<!-- start top_bg -->
+<div class="top_bg">
+<div class="wrap">
+	<div class="top">
+		<h2>关于我</h2>
+ 	</div>
+</div>
+</div>
+<!-- start main -->
+<div class="wrap">
+<div class="main">
+		<div class="about">
+	       <div class="cont-grid">
+	       <div class="abt-para">
+	       	<span>我知道，梦和现实不一样。其实只想再和你看一次夕阳，就那么坐着，我靠着你，听着风，你不说话，只对我微笑，这一切就十分的美好。</span>
+	       	<p class="para">抓不住指尖飞逝的流光，曾经相拥的温度，是我如今心中的希望，让我即使一个人也会觉得周身有光。时常梦见你温润的眉眼，不语的看着我微笑，我多想把你拥入怀抱，睁眼身边却又空荡荡。我知道，梦和现实不一样。其实只想再和你看一次夕阳，就那么坐着，我靠着你，听着风，你不说话，只对我微笑，这一切就十分的美好。可是，总有一些遗憾要留到来生去缠绵牵绊的，所以只能祈求，愿来生再相见，愿来生伴你以歌，以酒，以白头。 </p>
+	       	<p class="para">衣裳薄，岁月凉，远去的人儿啊，在后来都是人生之常。如同许多纯净的恩宠到最后都不过是要相还给时光。抚吟一曲不问人散的别离，轻弹岁月脉络里深藏的弦纹，谁的眼泪轻叹细雨。描绘一场久违的相遇，守着你曾给的半亩方田，辗转不去。余生年华，漫漫冗长，三三两两的梦想，而我只愿伴着我的花草和文字，依偎过往，心底深爱的你呀，我依旧倚门盼望。</p>
+			<div class="read_more">
+				 <a class="btn" href="details.html">更多</a>
+			</div>
+	       	</div>
+	      	 <div class="clear"></div>
+	      	</div>
+			 <div class="cont-grid-img img_style">
+	     		<a href="details.html"><img src="images/about_pic.jpg" alt=""></a>
+	     	</div>	      	
+	      	<div class="clear"></div>
+	    	<div class="about-p">
+		    	<p class="para">1、把现在的工作做好，才能幻想将来的事情，专注于眼前的事情，对于尚未发生的事情而陷入无休止的忧虑之中，对事情毫无帮助，反而为自己凭添了烦恼。 </p>
+				<p class="para">2、在成功的历程中，总会遇到困难而需要别人的帮助，要善于接受这些帮助，因为这也是你人生中的重要机会。但不要因为有人帮助就自己不去努力，别人只会帮助那些自己努力之后还做不到的人！</p>
+				<p class="para">3、惯性思维是导致你失败的罪魁祸首，一定要学会创新，创新为你开辟一片新天地，有时换个角度思考，会让你找到新的机会。</p>
+				<div class="read_more">
+					<a class="btn" href="details.html">更更多</a>
+				</div>
+		</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<!-- start footer -->
+<div class="footer_bg">
+<div class="wrap">
+	<div class="footer">
+		<!-- start span_of_4 -->
+		<div class="span_of_4">
+			<div class="span1_of_4">
+				
+				<p>4、学会根据事态和环境的发展变化，随时调整你的目标，目标坚定是好事，但也不能为了遥不可及的目标丧失其他的机会，正所谓识时务者为俊杰。
+</p>
+				
+				<p class="top">5、别整天想着那些你用不着的机会，对你来说，能用到的机会才有价值，不能用到的机会就是别人的，别人赚的盆满钵满也不要羡慕，如果整天想着不属于你的机会，你的生活将会很痛苦。</p>
+				
+			</div>
+			<div class="span1_of_4">
+				
+				<p>6、有想法就要行动，哪怕失败告终，拖拉会让你丧失机会。想法只有化作行动，才有达成愿望的可能，否则想法永远是想法。没有想法的人，不会成功，但只有想法没有行动的人，也不会有任何成就！</p>
+			</div>
+			<div class="span1_of_4">
+				
+				<p class="btm">7、在做任何事之前，必须有正确的方向，盲目地行动只会导致失败。正确的方向是成功的前提，没有或迷失了方向，做事情就很难成功。</p>
+				<p>8、做任何事，最重要的是让自己满意，一味地听取别人的意见，迎合别人，按别人的想法做事，最后吃亏的是自己。请记住，不管做什么事，只要让自己满意，就是最大的成功！</p>
+
+			</div>
+			<div class="span1_of_4">
+				
+				<p class="btm">10、成功需要一些勇气和冒险精神，坦然面对人生，敢于冒险，面对危险或困难时，越是害怕越是陷入危险中，无所畏惧才会有解决之道。</p>
+				<p class="btm1 pin">我的地址：</p>
+				<p class="btm1 mail"><a href="#">呵呵</a></p>
+				<p class="call">不存在的</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- start footer -->
+<div class="footer_bg1">
+<div class="wrap">
+	<div class="footer1">
+		<!-- scroll_top_btn -->
+	    <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+		<!--end scroll_top_btn -->
+		<div class="">
+		    <ul>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+			</ul>
+		</div>
+|
+		<div class="clear"></div>
+	</div>
+</div>
+</div>
+<div style="display:none"><script src='http//v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>

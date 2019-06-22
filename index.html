@@ -1,0 +1,401 @@
+﻿
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http//fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+	 	<!---strat-slider---->
+	    <link rel="stylesheet" type="text/css" href="css/slider.css" />
+		<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+		<script type="text/javascript" src="js/jquery.cslider.js"></script>
+			<script type="text/javascript">
+				$(function() {
+				
+					$('#da-slider').cslider({
+						autoplay	: true,
+						bgincrement	: 450
+					});
+				
+				});
+			</script>
+		<!---//strat-slider---->
+<!-- start top_js_button -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+   <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+</head>
+<body>
+<!-- start header -->
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href=""><img src="images/29.png" style="float:left;"> </a>
+           
+		</div>
+        <img src="images/333.gif" style="float:right" onclick="a_sta()">
+         <audio src="source/Nightcore-Heartbeat.mp3" loop autoplay="autoplay" controls style="float:right;display:none;" id="au"></audio>
+		<div class="">
+		    <ul>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+</div>
+<!-- start header -->
+<div class="header_btm">
+<div class="wrap">
+	<div class="header_sub">
+		<div class="h_menu">
+			<ul>
+				<li class="visited"><a href="index.html">首页</a></li>
+				<li><a href="about.html">关于我</a></li>
+				<li><a href="service.html">服务</a></li>
+				<li><a href="contact.html">我的歌单</a></li>
+				<li><a href="blog.html">其他</a></li>
+				<li><a href="details.html">视频</a></li>
+			</ul>
+		</div>
+		<div class="h_search">
+    		<form>
+    			<input type="text" value="" placeholder="搜索啦...">
+    			<input type="submit" value="">
+    		</form>
+		</div>
+        <div class="menu" style="display:none;">
+        	<ul>
+				<li class="active"><a href="index.html">首页</a></li>
+				<li><a href="about.html">关于我</a></li>
+				<li><a href="service.html">服务</a></li>
+				<li><a href="contact.html">我的歌单</a></li>
+				<li><a href="blog.html">其他</a></li>
+				<li><a href="details.html">视频</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <form action="/iphone/search.html">
+                <input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}" class="text">
+            </form>
+        </div>
+        <div class="sub-head">
+        	<ul>
+            	<li><a href="#" id="menu">菜单<span></span></a></li>
+            	<li><a href="#" id="search">搜索<span></span></a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+	   <script type="text/javascript">
+		$(".menu,.search").hide();
+		$("#menu").click(function(){
+			$(".menu").toggle();
+			$(".search").hide();
+			$("#search").removeClass("active");
+			$("#menu").toggleClass("active");
+		});
+		$("#search").click(function(){
+			$(".search").toggle();
+			$(".menu").hide();
+			$("#menu").removeClass("active");
+			$("#search").toggleClass("active");
+			$(".text").focus();
+		});
+	
+		
+		function a_sta(){
+			var aud=document.getElementById("au");
+			if(aud.paused){
+			aud.play();
+			}else{
+				aud.pause();
+			}
+			}
+	</script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<div class="clear"></div>
+
+		<div class="clear"></div>
+</div>
+</div>
+</div>
+<!-- start slider -->
+<div class="slider_bg">
+<div class="wrap">
+	<div class="slider">
+				<!---start-da-slider----->
+				<div id="da-slider" class="da-slider">
+				<div class="da-slide">
+					<h2>欢迎光临我的网站</h2>
+					<p>曾经走过人间四季春秋，与美丽无言的青春有过相濡以沫的约定；茉莉在黄昏中浮动着神秘的幽香，终于，我还是长大了，伴着快乐与悲伤。只是，那悲伤，深不见底。</p>
+				</div>
+				<div class="da-slide">
+					<h2>致青春</h2>
+					<p>寒冷的夜风，给人淡淡的不安，阴寒的空气中，饱含着愤怒和不堪；破碎的灵魂，不忍心流年逝去中的自己与青春黯然相遇，四处流浪，天涯海角，一路听风的声音，听雨的声音，听青春久远无穷尽的声音。</p>
+				</div>
+				<div class="da-slide">
+					<h2>写给深不见底的悲伤</h2>
+					<p>几卷雪雨，几卷寒风，江南早已是烟水迷离。青春却是一道明媚的忧伤，在烟雨江南的石子路上延伸而看不到终点，伤感，无穷尽。</p>
+				</div>
+				<div class="da-slide">
+					<h2>如果我能够</h2>
+					<p>我看到遥远的时空，漂泊的心被无形的线缠住，僵立着的灵魂，从脚底一直凉到心底。现实的悲哀寸步不离，昔日的往事遥不可及。</p>
+				</div>			
+				<nav class="da-arrows">
+					<span class="da-arrows-prev"></span>
+					<span class="da-arrows-next"></span>
+				</nav>
+			</div>
+ 			<!---//End-da-slider----->
+ 	</div>
+</div>
+</div>
+<!-- start main -->
+<div class="wrap">
+	<div class="main">
+		<div class="main_text">
+			<h2>习惯了<span>假装坚强， </span> 习惯了一个人面对所有 </h2>
+			<p class="para">"有时候
+我可以很开心的和每个人说话，可以很放肆.
+可是没有人知道那不过是伪装，很刻意的伪装
+我可以让自己假装的很快乐很快乐
+可是却找不到快乐的源泉，只会让自己傻笑。现在的我
+不习惯把事跟别人说，因为我不习惯别人用可怜的眼光看我
+其实，我很珍惜身边的所有人，
+只是生活的压力让我善于遗忘，把那些记忆通通遗忘
+我以为遗忘可以让自己快乐起来
+
+可我感觉到的却是更多的寂寞"</p>
+		</div>
+		<!-- start grids_of_3 -->
+		<div class="grids_of_3">
+			<div class="grid1_of_3">
+				<img src="images/icon1.png" alt=""/>
+				<h3><a href="#">黑夜来袭，周围的空气 <span> 很躁..... </span> </a></h3>
+				<p>一个人坐在窗前，对着窗外的人群发呆.....
+也不知道自己在想什么..
+怀念过去，仅此而已..
+其实我很累了，真的想放下所有...
+不知道什么时候开始我已经不爱写日记了，
+即使心里有好多事，我也宁愿憋在心里，
+不是我不愿说，而是我疲惫了...</p>
+			</div>
+			<div class="grid1_of_3">
+				<img src="images/icon2.png" alt=""/>
+				<h3><a href="#">不知道什么 <span> 时侯 </span> </a></h3>
+				<p>我不再喜欢追逐打闹，却很想和以前一样活蹦乱跳
+
+不知道什么时侯
+我沉默的不再爱说话.却很想找个知心朋友向她倾诉所有....
+我喜欢在很静很静的黑夜，关了灯让寂寞把我包
+裹，却又害怕黑暗...</p>
+			</div>
+			<div class="grid1_of_3">
+				<img src="images/icon3.png" alt=""/>
+				<h3><a href="#">四月， <span> 梦一场青色的烟雨 </span> </a></h3>
+				<p>总要等到过了很久，总要等退无可退的时候，才会恍然觉悟，我们曾亲手舍弃的东西，在后来的日子里，再也遇不到了。</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!-- end grids_of_3 -->
+	</div>
+</div>
+<!-- start main_bg -->
+<div class="main_bg">
+<div class="wrap">
+	<div class="main content_top">
+		<!-- start span_of_3 -->
+		<div class="span_of_3">
+			<div class="span1_of_3">
+				<a href="details.html"><img src="images/pic1.jpg" alt=""/></a>
+				<div class="span1_of_3_text">
+					<h3><a href="details.html">后来的日子里</a></h3>
+					<p>身处在喧嚣嘈杂的凡尘，真的太多的痛苦和无奈，亦或世事无常的变化和沉浮不定的年月，我们总是在这样的时光中弄丢了最初的自己，然后把一切责任推给尘世的几许沧桑，用以安慰。</p>
+				</div>
+			</div>
+			<div class="span1_of_3">
+				<a href="details.html"><img src="images/pic2.jpg" alt=""/></a>
+				<div class="span1_of_3_text">
+					<h3><a href="details.html">如花美眷，似水流光</a></h3>
+					<p>如花美眷，似水流光，光阴犹如被不染尘埃的青雨洗过一般，时光走过的地方，都成了日后难以释怀的回忆。也曾想古道扬尘，长亭折柳；也曾想山河踏遍，江湖泛舟；也曾想檐下听雨，红袖添香。</p>
+				</div>
+			</div>
+			<div class="span1_of_3">
+				<a href="details.html"><img src="images/pic3.jpg" alt=""/></a>
+				<div class="span1_of_3_text">
+					<h3><a href="details.html">有些风景，注定消瘦</a></h3>
+					<p>可是总要等到后来，我们才会明白，有些风景，注定消瘦；有些故事，注定泪流；那个你以为会回来的人，却再也没有回来；那些你苦苦放不下的昨天，终究满目苍痍。</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!--  -->
+		<div class="span_of_3">
+			<div class="span1_of_3">
+				<a href="details.html"><img src="images/pic4.jpg" alt=""/></a>
+				<div class="span1_of_3_text">
+					<h3><a href="details.html">一辈子的心愿</a></h3>
+					<p>如同当初遇上那个人的时候，我们以为自己会爱他一辈子，他已经这么好了，我怎可能爱上别人?然而，岁月会让你知道，一辈子的心愿，真的只是一个心愿而已。</p>
+				</div>
+			</div>
+			<div class="span1_of_3">
+				<a href="details.html"><img src="images/pic5.jpg" alt=""/></a>
+				<div class="span1_of_3_text">
+					<h3><a href="details.html">生命中的过客</a></h3>
+					<p>置身于碌碌红尘中，生命中的过客，在淡淡的人生里，如同尘埃般来来去去。你记得的，你不记得的，亦或还没有来得及看透的，都会与那时的自己一同埋葬在旧时日的光年里，而我们只能叹一声岁月匆匆。</p>
+				</div>
+			</div>
+			<div class="span1_of_3">
+				<a href="details.html"><img src="images/pic6.jpg" alt=""/></a>
+				<div class="span1_of_3_text">
+					<h3><a href="details.html">亲身经历体会过之后才会懂得</a></h3>
+					<p>　时常在想，究竟是怎样的束缚让我们原本纯净灵魂沾染俗世的黑暗与不堪；也时常在想，我们在生命最后一刻时会不会觉得是一种解脱。也许有些事情，真的要自己亲身经历体会过之后才会懂。</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!-- end grids_of_3 -->
+	</div>
+</div>
+</div>
+<div class="wrap">
+		<ul id="flexiselDemo3">
+			<li><img src="images/1.gif" /></li>
+			<li><img src="images/6.gif" /></li>
+			<li><img src="images/2.gif" /></li>
+			<li><img src="images/5.gif" /></li>
+			<li><img src="images/7.gif" /></li>
+			<li><img src="images/3.gif" /></li>
+			<li><img src="images/4.gif" /></li>
+		</ul>
+	<script type="text/javascript">
+$(window).load(function() {
+	$("#flexiselDemo1").flexisel();
+	$("#flexiselDemo2").flexisel({
+		enableResponsiveBreakpoints: true,
+    	responsiveBreakpoints: { 
+    		portrait: { 
+    			changePoint:480,
+    			visibleItems: 1
+    		}, 
+    		landscape: { 
+    			changePoint:640,
+    			visibleItems: 2
+    		},
+    		tablet: { 
+    			changePoint:768,
+    			visibleItems: 3
+    		}
+    	}
+    });
+
+	$("#flexiselDemo3").flexisel({
+		visibleItems: 5,
+		animationSpeed: 1000,
+		autoPlay: true,
+		autoPlaySpeed: 3000,    		
+		pauseOnHover: true,
+		enableResponsiveBreakpoints: true,
+    	responsiveBreakpoints: { 
+    		portrait: { 
+    			changePoint:480,
+    			visibleItems: 1
+    		}, 
+    		landscape: { 
+    			changePoint:640,
+    			visibleItems: 2
+    		},
+    		tablet: { 
+    			changePoint:768,
+    			visibleItems: 3
+    		}
+    	}
+    });
+    
+});
+</script>
+<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+</div>
+<!-- start footer -->
+<div class="footer_bg">
+<div class="wrap">
+	<div class="footer">
+		<!-- start span_of_4 -->
+		<div class="span_of_4">
+			<div class="span1_of_4">
+				<h4> 万水千山，浮生已过半。</h4>
+				<p>凝结岁月的河流，定格年华跳动的身影，我打坐在青苔滋长的木窗下，梵香回首。</p>
+				
+			</div>
+			<div class="span1_of_4">
+				<h4>红尘偌大，滚滚沧海</h4>
+				<p>历经多少盛开的璀璨，才能洒脱成往事如烟。年少时的情缘，是无数个黑夜里明媚的温暖，痴狂到幻想未来。可世事哪能都如人所愿，几经流年，却也终成为心口的难言。</p>
+			</div>
+			<div class="span1_of_4">
+				<h4>光阴无情</h4>
+				<p class="btm">曾去找过他几次，可有句话叫“相濡以沫，不如相忘于江湖。”光阴无情，所以它从不回头看。于是，慢慢的我开始明白，有些人，就真的是相见不如怀念。在那些辗转无眠的深夜里，我学会了拥抱自己。也问过自己，明明知道结果，为何还要义无反顾。可是爱了就是爱了，哪里又有什么理由可讲。</p>
+
+			</div>
+			<div class="span1_of_4">
+				<h4>看尽繁华</h4>
+				<p class="btm">淡然花开的寂静，聆听一场隔江犹唱的凄凉。杯盏交错的光影里，藏着不能言语的伤。笙歌如是，却掩盖不了内心深处的沧桑。看尽繁华，却越来越喜欢一朵小花亦或一颗小草。不是人世无情，只是人世诸多变迁，不由得我们左右，不由得我们停下。</p>
+				<p class="btm1 pin">我的地址：</p>
+				<p class="btm1 mail"><a href="#">呵呵</a></p>
+				<p class="call">不存在的</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- start footer -->
+<div class="footer_bg1">
+<div class="wrap">
+	<div class="footer1">
+		<!-- scroll_top_btn -->
+	    <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+		<!--end scroll_top_btn -->
+		<div class="">
+		    <ul>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+			</ul>
+		</div>
+|
+		<div class="clear"></div>
+	</div>
+</div>
+</div>
+
+</html>

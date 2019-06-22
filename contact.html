@@ -1,0 +1,591 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>Contact</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http//fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+
+<link href="css/bootstrap.css" rel="stylesheet" >
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<style>
+.main ul{
+	backgroun:red;
+	}
+	#ba li{
+		margin-left:100px;
+		margin-bottom:20px;
+		background:yellow;
+		font-size:30px;
+		}
+</style>
+<!-- start top_js_button -->
+<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+
+<script src="js/bootstrap.js"></script>
+   <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+</head>
+<body>
+<!-- start header -->
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="images/29.png" style="float:left;"></a>
+		</div>
+        <img src="images/33.gif" style="float:right" onclick="a_sta()">
+         <audio src="source/白宇&朱一龙-时间飞行-(超级网剧《镇魂》推广曲).mp3" loop autoplay="autoplay" controls style="float:right;display:none;" id="au"></audio>
+		<div class="">
+		    <ul>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+</div>
+<!-- start header -->
+<div class="header_btm">
+<div class="wrap">
+	<div class="header_sub">
+		<div class="h_menu">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="about.html">关于我</a></li>
+				<li><a href="service.html">服务</a></li>
+				<li  class="visited"><a href="contact.html">我的歌单</a></li>
+				<li><a href="blog.html">其他</a></li>
+				<li><a href="details.html">视频</a></li>
+			</ul>
+		</div>
+		<div class="h_search">
+    		<form>
+    			<input type="text" value="" placeholder="搜索啦...">
+    			<input type="submit" value="">
+    		</form>
+		</div>
+        <div class="menu" style="display:none;">
+        	<ul>
+				<li class="active"><a href="index.html">首页</a></li>
+				<li><a href="about.html">关于我</a></li>
+				<li><a href="service.html">服务</a></li>
+				<li><a href="contact.html">我的歌单</a></li>
+				<li><a href="blog.html">其他</a></li>
+				<li><a href="details.html">视频</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <form action="/iphone/search.html">
+                <input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}" class="text">
+            </form>
+        </div>
+        <div class="sub-head">
+        	<ul>
+            	<li><a href="#" id="menu">菜单 <span></span></a></li>
+            	<li><a href="#" id="search">搜索 <span></span></a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+	   <script type="text/javascript">
+		$(".menu,.search").hide();
+		$("#menu").click(function(){
+			$(".menu").toggle();
+			$(".search").hide();
+			$("#search").removeClass("active");
+			$("#menu").toggleClass("active");
+		});
+		$("#search").click(function(){
+			$(".search").toggle();
+			$(".menu").hide();
+			$("#menu").removeClass("active");
+			$("#search").toggleClass("active");
+			$(".text").focus();
+		});
+	</script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<div class="clear"></div>
+
+		<div class="clear"></div>
+</div>
+</div>
+</div>
+<!-- start top_bg -->
+<div class="top_bg">
+<div class="wrap">
+	<div class="top">
+		<h2>更多歌曲</h2>
+ 	</div>
+</div>
+</div>
+<!-- start main -->
+<div class="wrap">
+	<div class="main">
+	 	 <div class="contact">				
+					<div class="contact_info">
+                    
+                    <ul class="nav nav-pills" id="ba">
+  <li><a href="#home" data-toggle="tab">抖音神曲</a></li>
+  <li><a href="#profile" data-toggle="tab">热门音乐</a></li>
+  <li><a href="#messages" data-toggle="tab">影视插曲</a></li>
+  <li><a href="#settings" data-toggle="tab">动漫原声</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane fade in active" id="home">
+     
+  <table class="table table-hover" style="width:66%;float: right">
+        <tr class="active" style="height:50px;">
+            <!-- <div> 
+                <h4 id="name">李玉刚 - 刚好遇见你</h4>
+                <br>
+               <audio id="audio" src="source/DJ麻子-【抖音热播】流浪.mp3 " controls autoplay="true"></audio><br/>
+               </div>
+               <br><br>
+               <div>
+               <button id="btn-play" >播放</button>  
+               <button id="btn-stop" >暂停</button>  
+               <button id="btn-pre" >上一首</button>  
+               <button id="btn-next" >下一首</button>  
+               </div>
+               </div> -->
+            <th>歌名：流浪
+                <audio src="source/DJ麻子-【抖音热播】流浪.mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+            <th>歌手：DJ麻子</th>
+            <th>专辑：呵呵</th>
+        </tr>
+        <tr class="success">
+            <th>歌名：See It Again
+
+                <audio src="source/Loud Luxury-See It Again.mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+            <th>歌手：Loud Luxury</th>
+            <th>专辑：呵呵</th>
+        </tr>
+        <tr class="warning">
+            <th>歌名：小跳蛙
+                <audio src="source/青蛙-小跳蛙.mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+
+            <th>歌手：青蛙</th>
+            <th>专辑：哈哈</th>
+        </tr>
+        <tr class="danger">
+            <th>歌名：Heartbeat
+                <audio src="source/Nightcore-Heartbeat.mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+            <th>歌手：Nightcore</th>
+            <th>专辑：哈哈</th>
+        </tr>
+        <tr class="danger">
+            <th>歌名：10년만 기다려 베이베
+                <audio src="source/Six Bomb-10년만 기다려 베이베.mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+            <th>歌手：Six Bomb</th>
+            <th>专辑：哈哈</th>
+        </tr>
+        <tr class="danger">
+            <th>歌名：哈哈
+                <audio src="source/哈哈.mp4" controls style="width: 20px;height:20px"></audio>
+            </th>
+            <th>歌手：哈哈</th>
+            <th>专辑：哈哈</th>
+        </tr>
+        <tr class="danger">
+            <th>歌名：卡路里
+                <audio src="source/卡路里.mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+            <th>歌手：101</th>
+            <th>专辑：哈哈</th>
+        </tr>
+        <!-- On cells (`td` or `th`) -->
+
+    </table>
+  
+  </div>
+  <div class="tab-pane fade" id="profile">
+  <table class="table table-hover" style="width:66%;float: right">
+        <tr class="active" style="height:50px;">
+            <th>歌名：最好的自己
+                <audio src="source/崔子格-最好的自己-(电影《蜜月酒店杀人事件》主题曲).mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+            <th>歌手：崔子格</th>
+            <th>专辑：呵呵</th>
+        </tr>
+        <tr class="success">
+            <th>歌名：需要人陪
+
+                <audio src="source/王博文-需要人陪.mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+            <th>歌手：王博文</th>
+            <th>专辑：呵呵</th>
+        </tr>
+        <tr class="warning">
+            <th>歌名：小跳蛙
+                <audio src="source/青蛙-小跳蛙.mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+
+            <th>歌手：青蛙</th>
+            <th>专辑：哈哈</th>
+        </tr>
+        <tr class="danger">
+            <th>歌名：Heartbeat
+                <audio src="source/Nightcore-Heartbeat.mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+            <th>歌手：Nightcore</th>
+            <th>专辑：哈哈</th>
+        </tr>
+        <tr class="danger">
+            <th>歌名：10년만 기다려 베이베
+                <audio src="source/Six Bomb-10년만 기다려 베이베.mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+            <th>歌手：Six Bomb</th>
+            <th>专辑：哈哈</th>
+        </tr>
+        <tr class="danger">
+            <th>歌名：哈哈
+                <audio src="source/哈哈.mp4" controls style="width: 20px;height:20px"></audio>
+            </th>
+            <th>歌手：哈哈</th>
+            <th>专辑：哈哈</th>
+        </tr>
+        <tr class="danger">
+            <th>歌名：卡路里
+                <audio src="source/卡路里.mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+            <th>歌手：101</th>
+            <th>专辑：哈哈</th>
+        </tr>
+        <!-- On cells (`td` or `th`) -->
+
+    </table>
+  
+  </div>
+  <div class="tab-pane fade" id="messages">
+  
+  <table class="table table-hover" style="width:66%;float: right">
+        <tr class="active" style="height:50px;">
+            <th>歌名：时间飞行
+                <audio src="source/白宇&朱一龙-时间飞行-(超级网剧《镇魂》推广曲).mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+            <th>歌手：白宇*朱一龙</th>
+            <th>专辑：呵呵</th>
+        </tr>
+        <tr class="success">
+            <th>歌名：往后余生
+
+                <audio src="source/马良[内地]-往后余生(demo).mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+            <th>歌手：马良</th>
+            <th>专辑：呵呵</th>
+        </tr>
+        <tr class="warning">
+            <th>歌名：小跳蛙
+                <audio src="source/青蛙-小跳蛙.mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+
+            <th>歌手：青蛙</th>
+            <th>专辑：哈哈</th>
+        </tr>
+        <tr class="danger">
+            <th>歌名：Heartbeat
+                <audio src="source/Nightcore-Heartbeat.mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+            <th>歌手：Nightcore</th>
+            <th>专辑：哈哈</th>
+        </tr>
+        <tr class="danger">
+            <th>歌名：10년만 기다려 베이베
+                <audio src="source/Six Bomb-10년만 기다려 베이베.mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+            <th>歌手：Six Bomb</th>
+            <th>专辑：哈哈</th>
+        </tr>
+        <tr class="danger">
+            <th>歌名：有何不可
+                <audio src="source/许嵩-有何不可.mp3" controls style="width:20px;height:20px"></audio>
+            </th>
+            <th>歌手：许嵩</th>
+            <th>专辑：哈哈</th>
+        </tr>
+        <tr class="danger">
+            <th>歌名：卡路里
+                <audio src="source/卡路里.mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+            <th>歌手：101</th>
+            <th>专辑：哈哈</th>
+        </tr>
+        <!-- On cells (`td` or `th`) -->
+
+    </table>
+  
+  </div>
+  <div class="tab-pane fade" id="settings">
+  <table class="table table-hover" style="width:66%;float: right">
+        <tr class="active" style="height:50px;">
+            <th>歌名：她说
+                <audio src="source/张碧晨-她说.mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+            <th>歌手：张碧晨</th>
+            <th>专辑：呵呵</th>
+        </tr>
+        <tr class="success">
+            <th>歌名：See It Again
+
+                <audio src="source/Loud Luxury-See It Again.mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+            <th>歌手：Loud Luxury</th>
+            <th>专辑：呵呵</th>
+        </tr>
+        <tr class="warning">
+            <th>歌名：小跳蛙
+                <audio src="source/青蛙-小跳蛙.mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+
+            <th>歌手：青蛙</th>
+            <th>专辑：哈哈</th>
+        </tr>
+        <tr class="danger">
+            <th>歌名：Heartbeat
+                <audio src="source/Nightcore-Heartbeat.mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+            <th>歌手：Nightcore</th>
+            <th>专辑：哈哈</th>
+        </tr>
+        <tr class="danger">
+            <th>歌名：10년만 기다려 베이베
+                <audio src="source/Six Bomb-10년만 기다려 베이베.mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+            <th>歌手：Six Bomb</th>
+            <th>专辑：哈哈</th>
+        </tr>
+        <tr class="danger">
+            <th>歌名：哈哈
+                <audio src="source/哈哈.mp4" controls style="width: 20px;height:20px"></audio>
+            </th>
+            <th>歌手：哈哈</th>
+            <th>专辑：哈哈</th>
+        </tr>
+        <tr class="danger">
+            <th>歌名：卡路里
+                <audio src="source/卡路里.mp3" controls style="width: 20px;height:20px"></audio>
+            </th>
+            <th>歌手：101</th>
+            <th>专辑：哈哈</th>
+        </tr>
+        <!-- On cells (`td` or `th`) -->
+
+    </table>
+  
+  </div>
+  <!-- <script>
+	var btn1 = document.getElementById("btn-play");
+		btn1.onclick = function(){
+		 	 if(audio.paused){                 
+				audio.play();
+			}
+		}
+	
+	
+	var btn2 = document.getElementById("btn-stop");
+		btn2.onclick = function(){
+		 	 if(audio.played){                 
+				audio.pause();
+			}
+		}
+		
+	var music = new Array();
+	music = ["李玉刚 - 刚好遇见你","张杰 - 三生三世","朴树 - 平凡之路"];//歌单
+	var num = 0;
+	var name = document.getElementById("name");
+ 
+	
+
+	var btn3 = document.getElementById("btn-pre");
+	btn3.onclick = function(){
+			num = (num +2)%3;
+		 	audio.src =  "music/"+music[num]+".mp3";
+			name.innerHTML = music[num];
+			audio.play();
+		}
+		
+
+	var btn4 = document.getElementById("btn-next");
+	btn4.onclick = function(){
+		 	num = (num +1)%3;
+		 	audio.src =  "music/"+music[num]+".mp3";
+			name.innerHTML = music[num];
+			audio.play();
+		}
+
+	audio.addEventListener('ended', function () {  
+    btn4.onclick();
+}, false);
+      </script> -->
+</div>
+                    
+						
+      				</div>
+				  <div class="contact-form">
+			 	 
+		 	 	
+                
+                <div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel" style="width: 30%;height:300px;float: left">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" style="width: 100%;margin: auto;">
+            <div class="item active" >
+                <img src="images/1.jpg" alt="..." width="100%"  style="height:300px">
+
+            </div>
+
+            <div class="item ">
+                <img src="images/2.jpg" alt="..."width="100%"  style="height:300px">
+
+            </div>
+            <div class="item ">
+                <img src="images/3.jpg" alt="..."width="100%"  style="height:300px">
+
+            </div>
+            <div class="item ">
+                <img src="images/4.jpg" alt="..."width="100%"  style="height:300px">
+
+            </div>
+            <div class="item ">
+                <img src="images/5.jpg" alt="..."width="100%"  style="height:300px">
+
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+                
+		 	 
+					
+                        
+				    </div>
+  				<div class="clear"> </div>		
+			  </div>
+		</div>
+</div>
+<!-- start footer -->
+<div class="footer_bg">
+<div class="wrap">
+	<div class="footer">
+		<!-- start span_of_4 -->
+		<div class="span_of_4">
+			<div class="span1_of_4">
+				<h4>青春飞扬，梦想起航</h4>
+				<p>无论时间多久或是年华已去我们都将为梦想与希望张开坚实的翅膀！——题记</p>
+				
+			</div>
+			<div class="span1_of_4">
+				<h4>懵懂</h4>
+				<p> 这一季已过大半，入秋，凉风拂面，落叶飘零。我在十字路口徘徊。
+ 
+        绿灯亮了，我向前走。懵懂的学生时代就在这眨眼间，即将告别这青春的校园。</p>
+			</div>
+			<div class="span1_of_4">
+				<h4>然而，一个转身，我就将离开</h4>
+				<p class="btm">  曾经总以为进入社会离自己很遥远，学校会承载我所有的忧和愁度过每一天洋洋洒洒或甜蜜美满的生活。我不经意间养成坏习惯：睡觉睡到自然醒，游戏玩乐胜过学习和读书。然而，一个转身，我就将离开，告别我二十余年生命里最美丽的青春时光中校园的日子。我很不舍，甚是留恋，可是为时已晚。我已无路可逃。我没有那么多的青春年华可以任我挥霍。家中父亲紧皱的眉头，母亲悄悄斑白的丝发，已经容不得我再继续过着享受娱乐的快活日子。</p>
+
+			</div>
+			<div class="span1_of_4">
+				<h4>勇敢一点</h4>
+				<p class="btm">心不知什么时候像乐器上的弦紧绷了起来。或许明天之后，一年之后，我还是扶不起来的阿斗，还是一个不能独立面对世事的孩子。或许三年五载我也可以名满天下，备受瞩目。日子一天天过，谁也没有预测未来的本领，未来是属于每个人的。我相信我不会落后。于是我只能默默坚持自己心中的理想，勇敢一点。</p>
+				 <p class="btm1 pin">我的地址：</p>
+				<p class="btm1 mail"><a href="#">呵呵</a></p>
+				<p class="call">不存在的</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- start footer -->
+<div class="footer_bg1">
+<div class="wrap">
+	<div class="footer1">
+		<!-- scroll_top_btn -->
+	    <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				$("table audio").click(function(){
+                    console.log("llll");
+                    if(this.play){
+                        $(".header audio")[0].pause()
+                    }
+                    var $aud=$("table audio")
+                    for(var i=0;i<$aud.length;i++){
+                        $("table audio")[i].pause()
+                    }
+                
+                        this.play()
+                })
+                // console.log($("table audio"))
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+			function a_sta(){
+			var aud=document.getElementById("au");
+			if(aud.paused){
+			aud.play();
+			}else{
+				aud.pause();
+			}
+			}
+		</script>
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+		<!--end scroll_top_btn -->
+		<div class="">
+		    <ul>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+			</ul>
+		</div>
+|
+		<div class="clear"></div>
+	</div>
+</div>
+</div>
+
+</body>
+</html>
